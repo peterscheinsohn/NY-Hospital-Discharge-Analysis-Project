@@ -2,7 +2,8 @@
 
 **My first Power BI project.** Real hospital data, not synthetic. 2.05M discharge records across 202 New York hospitals.
 
-👉 **[View Dashboard Preview (PDF)](https://github.com/peterscheinsohn/NY-Hospital-Discharge-Analysis-Project/blob/main/Hospitals_discharges_2021_USA.pdf)**
+👉 **[View Dashboard Preview (PDF)](Hospitals_discharges_2021_USA.pdf)**  
+📓 **[Data Cleaning Notebook (Python / Pandas)](eda_cleaning%20(1).ipynb)**
 
 ---
 
@@ -50,5 +51,5 @@ Python · Pandas · Power Query · DAX · Power BI
 
 ---
 
-**Peter Scheinsohn, Ph.D.**
+**Peter Scheinsohn, Ph.D.**  
 [LinkedIn](https://www.linkedin.com/in/peterscheinsohn) · peter.scheinsohn@yahoo.de
