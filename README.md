@@ -20,4 +20,35 @@ The scale of heterogeneity. Effect of foreign body entering opening costs more t
 
 ## Key findings
 
-- Effect of foreign body entering opening: ~$90K median — most expensive d
+- Effect of foreign body entering opening: ~$90K median — most expensive diagnosis
+- Maltreatment/abuse cases: 37 days average stay — 12x longer than respiratory conditions
+- Hospitals charge 3–3.5x actual care costs — childbirth has highest markup at 3.88x
+- Medicare: $26K per discharge vs $16K for Government/Public
+- Medicare patients: 45.7% at Major or Extreme mortality risk vs 16.2% for Private Insurance
+
+---
+
+## Data source
+
+- **Dataset**: Hospital Inpatient Discharges (SPARCS De-Identified) 2021
+- **Official source**: [NY State Department of Health](https://health.data.ny.gov/Health/Hospital-Inpatient-Discharges-SPARCS-De-Identified/tg3i-cinn)
+- **Kaggle**: [Hospital Inpatient Discharges Dataset](https://www.kaggle.com/datasets/bhautikmangukiya12/hospital-inpatient-discharges-dataset)
+- 2.05M records · 202 hospitals · 2021 · Fully de-identified
+
+---
+
+## Tools
+
+Python · Pandas · Power Query · DAX · Power BI
+
+---
+
+## Honest notes
+
+- AI tools used for syntax help and design feedback. Analytical decisions are mine.
+- First Power BI project, built over 1–2 weeks.
+
+---
+
+**Peter Scheinsohn, Ph.D.**
+[LinkedIn](https://www.linkedin.com/in/peterscheinsohn) · peter.scheinsohn@yahoo.de
