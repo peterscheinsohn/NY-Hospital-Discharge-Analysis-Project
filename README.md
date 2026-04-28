@@ -2,7 +2,8 @@
 
 **My first Power BI project.** Real hospital data, not synthetic. 2.05M discharge records across 202 New York hospitals.
 
-👉 **[View Dashboard Preview (PDF)](Hospitals_discharges_2021_USA.pdf)**  
+👉 **[View Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYjk5N2M2NTQtZGMxOC00ZjczLWEyNzgtNTg1MDc3ODk0ZWU3IiwidCI6IjcyYjM0ZmM2LTE1OTctNGRiOC1iYTFlLTA0ZmZlOGQzOTMwOSJ9)**  
+📄 **[Dashboard Preview (PDF)](Hospitals_discharges_2021_USA.pdf)**  
 📓 **[Data Cleaning Notebook (Python / Pandas)](eda_cleaning%20(1).ipynb)**
 
 ---
