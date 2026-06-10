@@ -1,54 +1,79 @@
-# NY Hospital Discharge Analysis (SPARCS 2021)
+# Hospital Discharge Intelligence (SPARCS 2021)
 
-**My first Power BI project.** Real hospital data, not synthetic. 2.05M discharge records across 202 New York hospitals.
+Evidence Pilot 01 for **Health Tech Scout**: using real-world hospital discharge data to identify cost, length-of-stay, payer, and provider-level signals that can inform healthtech opportunity mapping.
 
-👉 **[View Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYjk5N2M2NTQtZGMxOC00ZjczLWEyNzgtNTg1MDc3ODk0ZWU3IiwidCI6IjcyYjM0ZmM2LTE1OTctNGRiOC1iYTFlLTA0ZmZlOGQzOTMwOSJ9)**  
-📄 **[Dashboard Preview (PDF)](Hospitals_discharges_2021_USA.pdf)**  
-📓 **[Data Cleaning Notebook (Python / Pandas)](eda_cleaning%20(1).ipynb)**
+This is not a synthetic training dataset. The project uses 2.05M de-identified inpatient discharge records across New York State hospitals to explore where clinical and operational burden becomes visible in public healthcare data.
 
----
+## Explore the project
 
-## Why this project
+- **Interactive dashboard**: [Open Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiYjk5N2M2NTQtZGMxOC00ZjczLWEyNzgtNTg1MDc3ODk0ZWU3IiwidCI6IjcyYjM0ZmM2LTE1OTctNGRiOC1iYTFlLTA0ZmZlOGQzOTMwOSJ9)
+- **Static dashboard preview**: [PDF preview](Hospitals_discharges_2021_USA.pdf)
+- **Data cleaning notebook**: [Python / Pandas notebook](eda_cleaning%20(1).ipynb)
 
-My previous portfolio project was Fintech — a domain I hardly understand. This time I picked healthcare, where I spent almost ten years in clinical trials. I specifically searched for real world evidence data, reduced 32 columns to 14 using Pandas, then explored the results in Power BI. Surprisingly, two financial columns — total charges and total costs — were enough to tell a meaningful story.
+## Why this matters
 
----
+Healthtech scouting should start with real healthcare problems, not only with company descriptions or technology labels. Hospital discharge data can help reveal where patient complexity, provider workload, payer mix, and financial pressure concentrate.
 
-## What surprised me
+This pilot explores how public real-world data can support questions such as:
 
-The scale of heterogeneity. Effect of foreign body entering opening costs more than leukemia treatment — that I did not expect. Different hospitals specialize dramatically differently. And having spent years analyzing serious adverse events in clinical trials, I had never looked at the hospital stage as an economic burden before. That was new.
+- Which diagnosis groups are associated with unusually high median costs?
+- Where do long hospital stays suggest care coordination or aftercare challenges?
+- How do charges, costs, payer groups, and mortality risk differ across segments?
+- Which patterns could point toward relevant healthtech use cases such as discharge planning, care navigation, remote monitoring, hospital analytics, or cost transparency?
 
----
+## Health Tech Scout angle
 
-## Key findings
+This project is designed as an evidence layer for a broader Health Tech Scout concept:
 
-- Effect of foreign body entering opening: ~$90K median — most expensive diagnosis
-- Maltreatment/abuse cases: 37 days average stay — 12x longer than respiratory conditions
-- Hospitals charge 3–3.5x actual care costs — childbirth has highest markup at 3.88x
-- Medicare: $26K per discharge vs $16K for Government/Public
-- Medicare patients: 45.7% at Major or Extreme mortality risk vs 16.2% for Private Insurance
+1. Start with a measurable healthcare burden.
+2. Translate the burden into practical use cases.
+3. Map companies and technologies that may address those use cases.
+4. Keep the analysis transparent, sourced, and easy to challenge.
 
----
+The dashboard is therefore not only a portfolio artifact. It is a small prototype for connecting healthcare data analysis with market and product intelligence.
+
+## Selected findings
+
+- "Effect of foreign body entering opening" showed an approximately $90K median cost in the analyzed data, making it one of the highest-cost diagnosis groups in the dashboard.
+- Maltreatment and abuse-related cases showed an average stay of 37 days, far longer than many common respiratory conditions.
+- Several service lines showed charges around 3-3.5x actual care costs; childbirth had one of the highest markup ratios in the analysis.
+- Medicare discharges showed higher average cost than Government/Public payer cases in this dataset view.
+- Medicare patients had a much higher share of Major or Extreme mortality risk than Private Insurance patients.
+
+These findings are descriptive signals, not causal conclusions.
 
 ## Data source
 
 - **Dataset**: Hospital Inpatient Discharges (SPARCS De-Identified) 2021
-- **Official source**: [NY State Department of Health](https://health.data.ny.gov/Health/Hospital-Inpatient-Discharges-SPARCS-De-Identified/tg3i-cinn)
-- **Kaggle**: [Hospital Inpatient Discharges Dataset](https://www.kaggle.com/datasets/bhautikmangukiya12/hospital-inpatient-discharges-dataset)
-- 2.05M records · 202 hospitals · 2021 · Fully de-identified
+- **Official source**: [New York State Department of Health](https://health.data.ny.gov/Health/Hospital-Inpatient-Discharges-SPARCS-De-Identified/tg3i-cinn)
+- **Kaggle mirror**: [Hospital Inpatient Discharges Dataset](https://www.kaggle.com/datasets/bhautikmangukiya12/hospital-inpatient-discharges-dataset)
+- **Scope used here**: 2.05M records, 202 hospitals, 2021, fully de-identified
 
----
+The SPARCS de-identified file contains discharge-level detail on patient characteristics, diagnoses, treatments, services, and charges. It does not contain protected health information under HIPAA.
+
+## Method
+
+- Cleaned and reduced the raw dataset from 32 columns to 14 analysis-ready fields with Python and Pandas.
+- Modeled and transformed the data with Power Query.
+- Built DAX measures for cost, charges, length of stay, payer comparison, and risk segmentation.
+- Designed a Power BI dashboard focused on healthcare burden, provider variation, and financial signals.
 
 ## Tools
 
 Python · Pandas · Power Query · DAX · Power BI
 
----
+## Limitations
 
-## Honest notes
+- This is a descriptive analysis, not a causal study.
+- The dataset covers New York State inpatient discharges in 2021 and is not directly transferable to DACH or EU healthcare systems.
+- Diagnosis-level patterns may reflect coding, case mix, hospital specialization, and other contextual factors.
+- The dashboard should be used for exploration and hypothesis generation, not for medical, reimbursement, or policy decisions.
 
-- AI tools used for syntax help and design feedback. Analytical decisions are mine.
-- First Power BI project, built over 1–2 weeks.
+## Project note
+
+This was my first Power BI project, built as a focused 1-2 week portfolio pilot. The analytical decisions are mine; AI tools were used for syntax support and design feedback.
+
+My professional interest is the intersection of clinical research, real-world evidence, healthcare data analytics, and healthtech market intelligence.
 
 ---
 
