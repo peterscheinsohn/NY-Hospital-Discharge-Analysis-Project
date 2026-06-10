@@ -78,4 +78,4 @@ My professional interest is the intersection of clinical research, real-world ev
 ---
 
 **Peter Scheinsohn, Ph.D.**  
-[LinkedIn](https://www.linkedin.com/in/peterscheinsohn) · peter.scheinsohn@yahoo.de
+[LinkedIn](https://www.linkedin.com/in/peterscheinsohn) · peter.scheinsohn@gmail.com
